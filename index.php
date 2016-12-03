@@ -1,39 +1,6 @@
 <?php
 
 		if (isset($_GET['repo']) && $_GET['repo'] == true) {
-			$data = '{
-  "login": "Darkkrye",
-  "id": 7265100,
-  "avatar_url": "https://avatars.githubusercontent.com/u/7265100?v=3",
-  "gravatar_id": "",
-  "url": "https://api.github.com/users/Darkkrye",
-  "html_url": "https://github.com/Darkkrye",
-  "followers_url": "https://api.github.com/users/Darkkrye/followers",
-  "following_url": "https://api.github.com/users/Darkkrye/following{/other_user}",
-  "gists_url": "https://api.github.com/users/Darkkrye/gists{/gist_id}",
-  "starred_url": "https://api.github.com/users/Darkkrye/starred{/owner}{/repo}",
-  "subscriptions_url": "https://api.github.com/users/Darkkrye/subscriptions",
-  "organizations_url": "https://api.github.com/users/Darkkrye/orgs",
-  "repos_url": "https://api.github.com/users/Darkkrye/repos",
-  "events_url": "https://api.github.com/users/Darkkrye/events{/privacy}",
-  "received_events_url": "https://api.github.com/users/Darkkrye/received_events",
-  "type": "User",
-  "site_admin": false,
-  "name": null,
-  "company": null,
-  "blog": null,
-  "location": null,
-  "email": null,
-  "hireable": null,
-  "bio": null,
-  "public_repos": 28,
-  "public_gists": 10,
-  "followers": 1,
-  "following": 10,
-  "created_at": "2014-04-11T15:51:02Z",
-  "updated_at": "2016-12-03T19:24:44Z"
-}';
-		} else {
 			$data = '[
   {
     "id": 58483560,
@@ -2500,6 +2467,40 @@
     "default_branch": "master"
   }
 ]';
+		} else {
+			$data = '{
+  "login": "Darkkrye",
+  "id": 7265100,
+  "avatar_url": "https://avatars.githubusercontent.com/u/7265100?v=3",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/Darkkrye",
+  "html_url": "https://github.com/Darkkrye",
+  "followers_url": "https://api.github.com/users/Darkkrye/followers",
+  "following_url": "https://api.github.com/users/Darkkrye/following{/other_user}",
+  "gists_url": "https://api.github.com/users/Darkkrye/gists{/gist_id}",
+  "starred_url": "https://api.github.com/users/Darkkrye/starred{/owner}{/repo}",
+  "subscriptions_url": "https://api.github.com/users/Darkkrye/subscriptions",
+  "organizations_url": "https://api.github.com/users/Darkkrye/orgs",
+  "repos_url": "https://api.github.com/users/Darkkrye/repos",
+  "events_url": "https://api.github.com/users/Darkkrye/events{/privacy}",
+  "received_events_url": "https://api.github.com/users/Darkkrye/received_events",
+  "type": "User",
+  "site_admin": false,
+  "name": null,
+  "company": null,
+  "blog": null,
+  "location": null,
+  "email": null,
+  "hireable": null,
+  "bio": null,
+  "public_repos": 28,
+  "public_gists": 10,
+  "followers": 1,
+  "following": 10,
+  "created_at": "2014-04-11T15:51:02Z",
+  "updated_at": "2016-12-03T19:24:44Z"
+}';
+			
 		}
 
 		header('Content-Type: application/json');
